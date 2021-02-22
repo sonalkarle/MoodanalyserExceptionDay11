@@ -50,10 +50,13 @@ namespace MoodanalyserTest
         [Test]
         public void Handle_NullException_return_Invalid()
         {
-            string message = " ";
+            //Arrange 
+            string message = null;
            moodanalyser = new Moodanalyser(message);
-            string expected = null;
+            //Act
+            string expected = "INVALID";
             string actual = moodanalyser.AnalyseMood();
+            //Assert
             Assert.AreEqual(expected, actual);
             
         }

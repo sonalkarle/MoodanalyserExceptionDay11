@@ -31,7 +31,7 @@ namespace MoodanalyserDay11
                     return "HAPPY";
                 }
             }
-            catch (NullReferenceException)
+            catch 
             {
                 return "INVALID";
             }
