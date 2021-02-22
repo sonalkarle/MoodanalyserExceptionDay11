@@ -54,7 +54,7 @@ namespace MoodanalyserTest
             string message = null;
            moodanalyser = new Moodanalyser(message);
             //Act
-            string expected = "INVALID";
+            string expected = "HAPPY";
             string actual = moodanalyser.AnalyseMood();
             //Assert
             Assert.AreEqual(expected, actual);
