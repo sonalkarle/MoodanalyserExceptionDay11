@@ -33,7 +33,7 @@ namespace MoodanalyserDay11
             }
             catch 
             {
-                return "INVALID";
+                return "HAPPY";
             }
         }
     }
