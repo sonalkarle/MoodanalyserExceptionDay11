@@ -60,5 +60,21 @@ namespace MoodanalyserTest
             Assert.AreEqual(expected, actual);
             
         }
+        ///<summary>
+        ///UC2.1:Handle null exception return as invalid
+        /// </summary>
+        [Test]
+        public void Handle_NullException_return_HAPPY()
+        {
+            //Arrange 
+            string message = null;
+            moodanalyser = new Moodanalyser(message);
+            //Act
+            string expected = "HAPPY";
+            string actual = moodanalyser.AnalyseMood();
+            //Assert 
+            Assert.AreEqual(expected, actual);
+
+        }
     }
 }
