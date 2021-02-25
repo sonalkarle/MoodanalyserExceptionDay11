@@ -7,15 +7,16 @@ namespace MoodanalyserDay11
    public  class Moodanalyser
     {
        private string message;
-        
-        public  Moodanalyser(string message)
-        {
-            this.message = message;
-        }
+
         /// <summary>
         /// Parametrized constructor
         /// </summary>
         /// <returns></returns>
+        public Moodanalyser(string message)
+        {
+            this.message = message;
+        }
+        
         public string AnalyseMood()
         {
             if (this.message.Contains("SAD"))
