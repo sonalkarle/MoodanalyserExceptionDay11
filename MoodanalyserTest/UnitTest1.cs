@@ -13,7 +13,7 @@ namespace MoodanalyserTest
         public void Setup()
         {
 
-            moodanalyser = new Moodanalyser();
+            moodanalyser = new Moodanalyser() ;
 
         }
         /// <summary>
